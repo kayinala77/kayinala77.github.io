@@ -1,1 +1,219 @@
-Gann Indicator
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio: AI Agent Stock Prediction</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { padding-top: 4.5rem; }
+    .screenshot { border: 1px solid #ddd; border-radius: .25rem; }
+    footer { padding: 2rem 0; text-align: center; color: #666; }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">AI Agent Stock Prediction</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+          <li class="nav-item"><a class="nav-link" href="#work">My Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="#evidence">Evidence</a></li>
+          <li class="nav-item"><a class="nav-link" href="#appendix">Appendix</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!-- Introduction -->
+    <section id="intro" class="mb-5">
+      <h1 class="mb-3">Portfolio Contribution</h1>
+      <p>
+        This project implements an AI‐driven stock prediction and trading assistant built in Python using CrewAI agents and Backtrader.
+        I designed and coded the Gann Hi-Lo Activator indicator, integrated real-time and historical data fetching, developed the Streamlit interface,
+        wrote unit/integration tests, and built the backtesting framework. All source is public on
+        <a href="https://github.com/kayinala77/Ayinala-AI-Agent-Stock-Prediction" target="_blank">GitHub</a>.
+      </p>
+    </section>
+
+    <!-- Overview -->
+    <section id="overview" class="mb-5">
+      <h2>Project Overview</h2>
+      <p>A quick at-a-glance of our four Sprints:</p>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead class="table-dark">
+            <tr>
+              <th>Sprint</th>
+              <th>Objective</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Minimal Viable Product: Gann Hi-Lo Activator core calculation</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Real-time & historical data integration, basic CrewAI decision code</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Unit & integration testing; performance/scalability improvements</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Backtesting framework for end-to-end Gann + CrewAI strategy</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- My Work -->
+    <section id="work" class="mb-5">
+      <h2>My Key Contributions</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <!-- Sprint 1 Card -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Sprint 1</h5>
+              <p><strong>Task:</strong> Gann Hi-Lo Indicator Calculation (Gann.1)</p>
+              <ul>
+                <li>Estimated: 20 h; Actual: 30 h</li>
+                <li>Implemented calculation logic and initial data pipeline</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Sprint 2 Card -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Sprint 2</h5>
+              <p><strong>Tasks:</strong> UI Development (Gann.6), CrewAI Decision Support (Gann.8)</p>
+              <ul>
+                <li>UI: 20 h est → 22 h actual</li>
+                <li>CrewAI integration: 16 h est → 29 h actual</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Sprint 3 Card -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Sprint 3</h5>
+              <p><strong>Tasks:</strong> CrewAI Decision Support (Gann.8), Testing & Scalability (Gann.10)</p>
+              <ul>
+                <li>CrewAI: repeated improvements</li>
+                <li>Tests: 10 h est → 16 h actual</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Sprint 4 Card -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Sprint 4</h5>
+              <p><strong>Task:</strong> Backtesting Framework (Gann.11)</p>
+              <ul>
+                <li>Est: 18 h; Actual: 29 h</li>
+                <li>Completed full end-to-end strategy backtest</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Evidence -->
+    <section id="evidence" class="mb-5">
+      <h2>Evidence & Resources</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <figure class="figure">
+            <img src="screenshot-indicator.png" alt="Indicator Code Snippet" class="figure-img img-fluid screenshot">
+            <figcaption class="figure-caption">Gann Hi-Lo calculation in action.</figcaption>
+          </figure>
+        </div>
+        <div class="col-md-6">
+          <figure class="figure">
+            <img src="screenshot-backtest.png" alt="Backtest Results" class="figure-img img-fluid screenshot">
+            <figcaption class="figure-caption">Backtesting dashboard output.</figcaption>
+          </figure>
+        </div>
+      </div>
+      <p class="mt-4">
+        Full code and demos live on
+        <a href="https://github.com/kayinala77/Ayinala-AI-Agent-Stock-Prediction" target="_blank">GitHub</a>.
+      </p>
+      <p>
+        Download detailed task-hours sheets:
+        <ul>
+          <li><a href="Ayinala%20Sprint%201%20Task%20Hours.docx" download>Sprint 1 Task Hours</a></li>
+          <li><a href="Ayinala%20Sprint%202%20Task%20Hours.docx" download>Sprint 2 Task Hours</a></li>
+          <li><a href="Ayinala%20Sprint%203%20Task%20Hours.docx" download>Sprint 3 Task Hours</a></li>
+          <li><a href="Ayinala%20Sprint%204%20Task%20Hours.docx" download>Sprint 4 Task Hours</a></li>
+        </ul>
+      </p>
+    </section>
+
+    <!-- Appendix -->
+    <section id="appendix" class="mb-5">
+      <h2>Appendix: Full Commit History</h2>
+      <div class="table-responsive">
+        <table class="table table-sm table-bordered">
+          <thead class="table-light">
+            <tr>
+              <th>Date</th>
+              <th>Commit</th>
+              <th>Description</th>
+              <th>User Story</th>
+              <th>Task</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Sprint 1 commits -->
+            <tr><td>Feb 1, 2025</td><td>d8052a711b7adf36e6698c65b43af905ac4eddfc</td><td>Add Gann main file and gann indicator files</td><td>Gann1</td><td>Gann.1</td></tr>
+            <tr><td>Feb 1, 2025</td><td>a1d7e31dcdc790121a62bb61dc3ac903956387c0</td><td>Add Gann main file and gann indicator files</td><td>Gann1</td><td>Gann.1</td></tr>
+            <tr><td>Feb 1, 2025</td><td>c2526a38820376a8dd27ca0c869d857daf7f26a9</td><td>Add Gann main file and gann indicator files</td><td>Gann1</td><td>Gann.1</td></tr>
+            <tr><td>Feb 1, 2025</td><td>e2b80cfe92fc369d85270c8fdc57f6928598dc04</td><td>Add Gann main file and gann indicator files</td><td>Gann1</td><td>Gann.1</td></tr>
+            <tr><td>Feb 1, 2025</td><td>4c048b1d1a3083d57bedf4b29c3c132db2bd8b46</td><td>Add Gann main file and gann indicator files</td><td>Gann1</td><td>Gann.1</td></tr>
+            <tr><td>Feb 1, 2025</td><td>9f350a47e48469eec6b65a0b3f7aca7f95c1165b</td><td>Add Gann main file and gann indicator files</td><td>Gann1</td><td>Gann.1</td></tr>
+            <tr><td>Feb 1, 2025</td><td>c520fcfd78c43efb6ce9badcc6744c3f1c28f892</td><td>Add Gann main file and gann indicator files</td><td>Gann1</td><td>Gann.1</td></tr>
+            <tr><td>Feb 1, 2025</td><td>22a24dcfd870e9ac425095a7309cf7c44b9abfc9</td><td>Add Gann main file and gann indicator files</td><td>Gann1</td><td>Gann.1</td></tr>
+            <tr><td>Feb 1, 2025</td><td>b7b1d7aed9d601693725c23a16e6bc67bfa729e0</td><td>Add Gann main file and gann indicator files</td><td>Gann1</td><td>Gann.1</td></tr>
+            <tr><td>Feb 1, 2025</td><td>71e5ac268483c03e06ac55d1ec46574039eecbc7</td><td>Add Gann main file and gann indicator files</td><td>Gann1</td><td>Gann.1</td></tr>
+            <tr><td>Feb 1, 2025</td><td>64f0f13ec6bcdd4bdbf89ed787e427cf293efc63</td><td>Add Gann main file and gann indicator files</td><td>Gann1</td><td>Gann.1</td></tr>
+            <!-- Sprint 2 commits -->
+            <tr><td>Feb 8, 2025</td><td>2cbc6c6ee65a0c708aa9bfbbf859ba59e8f1948a</td><td>Update Gann main file with customization and also fetch real time data</td><td>Gann1</td><td>Gann.6</td></tr>
+            <tr><td>Feb 26, 2025</td><td>baf1686665970fd789af2baba29a7da3dbfdf956</td><td>Gann Crew AI agents Investment decision code</td><td>Gann1</td><td>Gann.8</td></tr>
+            <!-- Sprint 3 commits -->
+            <tr><td>Mar 13, 2025</td><td>1033a87c2182125ab0ffa1ac9fd64e1ac96c7f2f</td><td>Updated Gann main code</td><td>Gann1</td><td>Gann.8</td></tr>
+            <tr><td>Mar 25, 2025</td><td>0e39e9e08ab096789b952fbc9772b65b29c89695</td><td>Unit tests and integration tests for Gann indicator</td><td>Gann1</td><td>Gann.10</td></tr>
+            <!-- Sprint 4 commits -->
+            <tr><td>Apr 21, 2025</td><td>0fc61cf649adedc45d4175195965cd10e0445f68</td><td>Gann backtest code</td><td>Gann1</td><td>Gann.11</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Kalyan Ayinala – AI Agent Stock Prediction Portfolio
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
